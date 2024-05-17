@@ -24,7 +24,7 @@ Rev   |   Date   |  Author   | Change Description
 
 # About this Manual
 
-This document describes the proposed integration of Rasdaemon and PCIeD in SONiC 4.4.0. 
+This document describes the proposed integration of Rasdaemon and PCIeD in SONiC 4.4.0. 
 
 # Introduction
 
@@ -119,7 +119,8 @@ PCIeD is running as daemon in the PMON container for all platforms.
 
 * Enhance TS to Collect PCIeD Outputs:
 
-		root@sonic:/usr/bin# show platform pcieinfo   -> Show current device PCIe info
+		root@sonic:/usr/bin# show platform pcieinfo     -> Show current device PCIe info
+		root@sonic:/usr/bin# show platform pcieinfo -c  -> Check whether the PCIe info is correct
 		
 	Outputs:
 		root@sonic:/home/admin# show platform pcieinfo
