@@ -41,6 +41,15 @@ Rasdaemon is a RAS (Reliability, Avaliability and Serviceability) logging tool. 
 * Event errors are recorded in the database. The Sqlite3 database is located at /var/lib/rasdaemon/ras-mc_event.db 
 * The database can be examined using 'ras-mc-ctl --errors'
 
+### System Boot  
+
+The Sqlite3 database serves as a persistent record of the RAS events after system reboots. 
+
+### Image Upgrade
+
+The Sqlite3 database does not persist through image upgrades.  
+
+
 ## Work Proposed for SONiC 4.4.0
 
 Technical Support (TS) currently collects rasdaemon syslog and dmesg infomration. To enhance this, TS should also gather information from the SQLite3 database using 'ras-mc-ctl' outputs.
